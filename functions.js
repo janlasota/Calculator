@@ -377,7 +377,7 @@ $(document).keypress(function(e){
   }
 });
 $(document).keypress(function(e){
-  if(e.key == '=' || e.key == 'Enter'){
+  if(e.key == '='){
     if(num1Display === '' && num2Display === '' ||
     num1Display !== '' && num2Display === '' ||
     num1Display === '' && num2Display !== ''){
@@ -453,7 +453,7 @@ $(document).keypress(function(e){
   }
 });
 $(document).keypress(function(e){
-  if(e.key == 'Backspace'){
+  if(e.which == 8){
     backSpace = backspace();
     $('#displayResult').html(backSpace);
   }
