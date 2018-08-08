@@ -54,7 +54,7 @@ var one2Dot = false;
 var backSpace;
 
 /*Digit Buttons*/
-$('#0digitBtn').click(function(){
+$('.zeroDigitBtn').click(function(){
   if(oprDisplay === ''){
     num1Display += digits[0];
     $('#displayResult').html(num1Display);
@@ -64,7 +64,7 @@ $('#0digitBtn').click(function(){
     $('#displayResult').html(num2Display);
   }
 });
-$('#1digitBtn').click(function(){
+$('.oneDigitBtn').click(function(){
   if(oprDisplay === ''){
     num1Display += digits[1];
     $('#displayResult').html(num1Display);
@@ -74,7 +74,7 @@ $('#1digitBtn').click(function(){
     $('#displayResult').html(num2Display);
   }
 });
-$('#2digitBtn').click(function(){
+$('.twoDigitBtn').click(function(){
   if(oprDisplay === ''){
     num1Display += digits[2];
     $('#displayResult').html(num1Display);
@@ -84,7 +84,7 @@ $('#2digitBtn').click(function(){
     $('#displayResult').html(num2Display);
   }
 });
-$('#3digitBtn').click(function(){
+$('.threeDigitBtn').click(function(){
   if(oprDisplay === ''){
     num1Display += digits[3];
     $('#displayResult').html(num1Display);
@@ -94,7 +94,7 @@ $('#3digitBtn').click(function(){
     $('#displayResult').html(num2Display);
   }
 });
-$('#4digitBtn').click(function(){
+$('.fourDigitBtn').click(function(){
   if(oprDisplay === ''){
     num1Display += digits[4];
     $('#displayResult').html(num1Display);
@@ -104,7 +104,7 @@ $('#4digitBtn').click(function(){
     $('#displayResult').html(num2Display);
   }
 });
-$('#5digitBtn').click(function(){
+$('.fiveDigitBtn').click(function(){
   if(oprDisplay === ''){
     num1Display += digits[5];
     $('#displayResult').html(num1Display);
@@ -114,7 +114,7 @@ $('#5digitBtn').click(function(){
     $('#displayResult').html(num2Display);
   }
 });
-$('#6digitBtn').click(function(){
+$('.sixDigitBtn').click(function(){
   if(oprDisplay === ''){
     num1Display += digits[6];
     $('#displayResult').html(num1Display);
@@ -124,7 +124,7 @@ $('#6digitBtn').click(function(){
     $('#displayResult').html(num2Display);
   }
 });
-$('#7digitBtn').click(function(){
+$('.sevenDigitBtn').click(function(){
   if(oprDisplay === ''){
     num1Display += digits[7];
     $('#displayResult').html(num1Display);
@@ -134,7 +134,7 @@ $('#7digitBtn').click(function(){
     $('#displayResult').html(num2Display);
   }
 });
-$('#8digitBtn').click(function(){
+$('.eightDigitBtn').click(function(){
   if(oprDisplay === ''){
     num1Display += digits[8];
     $('#displayResult').html(num1Display);
@@ -144,7 +144,7 @@ $('#8digitBtn').click(function(){
     $('#displayResult').html(num2Display);
   }
 });
-$('#9digitBtn').click(function(){
+$('.nineDigitBtn').click(function(){
   if(oprDisplay === ''){
     num1Display += digits[9];
     $('#displayResult').html(num1Display);
@@ -156,7 +156,7 @@ $('#9digitBtn').click(function(){
 });
 
 /*Operator Buttons*/
-$('#dotBtn').click(function(){
+$('.dotBtn').click(function(){
   if(oprDisplay === ''){
     if(one1Dot === false){
       num1Display += dotOperator;
@@ -172,23 +172,23 @@ $('#dotBtn').click(function(){
     }
   }
 });
-$('#addBtn').click(function(){
+$('.addBtn').click(function(){
   oprDisplay = operators[0];
   $('#displayResult').html(oprDisplay);
 });
-$('#subtractBtn').click(function(){
+$('.subtractBtn').click(function(){
   oprDisplay = operators[1];
   $('#displayResult').html(oprDisplay);
 });
-$('#multiplyBtn').click(function(){
+$('.multiplyBtn').click(function(){
   oprDisplay = operators[2];
   $('#displayResult').html(oprDisplay);
 });
-$('#divideBtn').click(function(){
+$('.divideBtn').click(function(){
   oprDisplay = operators[3];
   $('#displayResult').html(oprDisplay);
 });
-$('#equalsBtn').click(function(){
+$('.equalsBtn').click(function(){
   if(num1Display === '' && num2Display === '' ||
   num1Display !== '' && num2Display === '' ||
   num1Display === '' && num2Display !== ''){
@@ -233,7 +233,7 @@ $('#equalsBtn').click(function(){
 });
 
 /*Clear Button*/
-$('#clearBtn').click(function(){
+$('.clearBtn').click(function(){
   num1Display = '';
   num2Display = '';
   oprDisplay = '';
@@ -244,7 +244,7 @@ $('#clearBtn').click(function(){
 });
 
 /*Backspace Button*/
-$('#backspaceBtn').click(function(){
+$('.backspaceBtn').click(function(){
   backSpace = backspace();
   $('#displayResult').html(backSpace);
 });
@@ -452,7 +452,7 @@ $(document).keypress(function(e){
     $('#displayResult').html(' ');
   }
 });
-$(document).keypress(function(e){
+$(document).keydown(function(e){
   if(e.which == 8){
     backSpace = backspace();
     $('#displayResult').html(backSpace);
