@@ -6,25 +6,29 @@
 </head>
 <body>
   <div id='container'>
-    <button id='0digitBtn'>0</button>
-    <button id='1digitBtn'>1</button>
-    <button id='2digitBtn'>2</button>
-    <button id='3digitBtn'>3</button>
-    <button id='4digitBtn'>4</button>
-    <button id='5digitBtn'>5</button>
-    <button id='6digitBtn'>6</button>
-    <button id='7digitBtn'>7</button>
-    <button id='8digitBtn'>8</button>
-    <button id='9digitBtn'>9</button>
-    <button id='dotBtn'>.</button>
-    <button id='addBtn'>+</button>
-    <button id='subtractBtn'>-</button>
-    <button id='multiplyBtn'>*</button>
-    <button id='divideBtn'>/</button>
-    <button id='equalsBtn'>=</button>
-    <button id='backspaceBtn'>Backspace</button>
-    <button id='clearBtn'>Clear</button>
-    <p id='displayResult'></p>
+    <div id='screen'>
+      <p id='displayResult'></p>
+    </div>
+    <div id='calculator'>
+      <button class='clearBtn specialBtn'>Clear</button>
+      <button class='backspaceBtn specialBtn'>Backspace</button>
+      <button class='oneDigitBtn digitBtn'>1</button>
+      <button class='twoDigitBtn digitBtn'>2</button>
+      <button class='threeDigitBtn digitBtn'>3</button>
+      <button class='addBtn operatorBtn'>+</button>
+      <button class='fourDigitBtn digitBtn'>4</button>
+      <button class='fiveDigitBtn digitBtn'>5</button>
+      <button class='sixDigitBtn digitBtn'>6</button>
+      <button class='subtractBtn operatorBtn'>-</button>
+      <button class='sevenDigitBtn digitBtn'>7</button>
+      <button class='eightDigitBtn digitBtn'>8</button>
+      <button class='nineDigitBtn digitBtn'>9</button>
+      <button class='multiplyBtn operatorBtn'>*</button>
+      <button class='zeroDigitBtn digitBtn'>0</button>
+      <button class='dotBtn specialBtn'>.</button>
+      <button class='equalsBtn'>=</button>
+      <button class='divideBtn operatorBtn'>/</button>
+    </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type='text/javascript' src='functions.js'></script>
